@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+
+:root {
+  --bgBlack: #090909;
+  --bgWhitw: #f1f1f1;
+  --mxDesk: 62px;
+  --mxTap: 36px;
+  --mxMob: 12px;
+}
+
+body {
+  background-color: var(--bgBlack);
+}

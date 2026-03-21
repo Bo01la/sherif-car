@@ -1,7 +1,13 @@
+import Nav from "./assets/components/Nav.jsx";
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl text-green-400">cccccccxxxxxxxxxxx</h1>
+        <Nav />
+        <div className="text-white relative z-10">
+          <p>edwjknwkjendkwnedknedknd</p>
+        </div>
+      
     </>
   );
 }
