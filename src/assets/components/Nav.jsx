@@ -25,7 +25,9 @@ const Nav = () => {
 
       <div
         className={`fixed inset-0 z-[90] bg-black/10 backdrop-blur-[2px] transition-opacity duration-[1000ms] ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
         onClick={closeHelper}
       >
@@ -42,6 +44,23 @@ const Nav = () => {
             <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></span>
             <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></span>
           </button>
+          <div className="flex flex-col gap-4">
+            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+              الرئيسية
+            </a>
+            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+              اسطول السيارات
+            </a>
+            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+              خطوات الاستأجار
+            </a>
+            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+              من نحن
+            </a>
+            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+              اراء العملاء
+            </a>
+          </div>
         </div>
       </div>
     </>

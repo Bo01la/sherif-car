@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "fa5ama";
+  src: url("/font/fa5ama.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bgBlack: #090909;
@@ -7,7 +14,13 @@
   --mxDesk: 62px;
   --mxTap: 36px;
   --mxMob: 12px;
+
+  --font-local: "fa5ama", sans-serif;
+  --font-cairo: "Cairo", sans-serif;
 }
+/* <h1 className="font-[family-name:var(--font-local)] text-white">
+  Sherif Car Rental
+</h1> */
 
 body {
   background-color: var(--bgBlack);
