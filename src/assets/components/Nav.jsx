@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-[80] flex justify-between mt-3 mx-[var(--mxMob)] md:mx-[var(--mxTap)] lg:mx-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl">
+      <nav className="bg-black sticky top-0 z-[80] flex justify-between mt-3 mx-[var(--mxMob)] md:mx-[var(--mxTap)] lg:mx-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl">
         <img src="/pics/logo.png" alt="logo" width={72} />
 
         <div className="flex flex-col justify-center">
