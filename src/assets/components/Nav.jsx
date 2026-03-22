@@ -16,7 +16,7 @@ const Nav = () => {
             className="flex flex-col gap-0.5 cursor-pointer"
             onClick={openHelper}
           >
-            <div className="w-5 h-0.5 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></div>
+            <div className="w-5 h-0.5 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm">e</div>
             <div className="w-5 h-0.5 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></div>
             <div className="w-5 h-0.5 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></div>
           </button>
