@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Hero = () => {
   return (
     <section id="hero" className="relative">
@@ -11,7 +13,7 @@ const Hero = () => {
           <source src="/Videos/heroVideo.mp4" type="video/mp4" />
         </video>
         <div className="relative z-10 flex justify-center mt-[40%] lg:mt-[20%] xl:mt-[10%] mx-[var(--mxMob)] md:mx-[var(--mxTap)] lg:mx-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl">
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center gap-6 text-center">
             <div className="flex flex-col gap-2 justify-center items-center">
               <h1 className="flex gap-1.5 font-[family-name:var(--font-local)] text-2xl md:text-5xl lg:text-6xl bg-white bg-clip-text text-transparent">
                 في مصر
@@ -20,12 +22,13 @@ const Hero = () => {
                 </span>
                 أفضل مكتب
               </h1>
-              <p className="text-white ">
+              <p className="text-white xl:max-w-lg">
                 بتدور على إيجار سيارات مريحة ومضمونة؟ اختار من أسطولنا أحسن
                 سيارات للإيجار بدون سائق في القاهرة، بأسهل الإجراءات وأحسن
-                الأسعار. طريقك دايماً أسهل معانا!
+                الأسعار. طريقك دايماً أسهل معانا
               </p>
             </div>
+            <Button text={"اتصل بنا"} />
           </div>
         </div>
       </div>
