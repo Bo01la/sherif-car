@@ -77,7 +77,7 @@ const Rent = () => {
     <section
       id="rent"
       ref={root}
-      className="relative min-h-[100vh] md:min-h-[300vh] overflow-hidden"
+      className="relative min-h-screen md:min-h-[300vh] overflow-hidden"
     >
       <video
         autoPlay

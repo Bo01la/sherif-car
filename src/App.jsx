@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP);
 import Nav from "./assets/components/Nav.jsx";
 import Hero from "./assets/components/Hero.jsx";
 import Rent from "./assets/components/Rent.jsx";
+import About from "./assets/components/About.jsx";
 
 function App() {
   useGSAP(() => {
@@ -27,6 +28,7 @@ function App() {
         <div id="smooth-content">
           <Hero />
           <Rent />
+          <About />
         </div>
       </div>
 
