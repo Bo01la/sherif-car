@@ -2,6 +2,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import FleetCarousel from "../components/carusell/FleetCarousel";
+
 const Hero = () => {
   useGSAP(() => {
     const tl = gsap.timeline({ delay: 3 });
@@ -23,7 +25,7 @@ const Hero = () => {
       invalidateOnRefresh: true,
     });
 
-    gsap.to("#fleet-content", {
+    gsap.to("#fleet-wrapper", {
       borderRadius: 0,
       scrollTrigger: {
         trigger: "#fleet",
@@ -75,12 +77,26 @@ const Hero = () => {
       </div>
       <div id="fleet" className="relative z-10">
         <div
-          id="fleet-content"
-          className="bg-[var(--bgWhitw)] min-h-screen overflow-hidden rounded-t-[12%] xl:rounded-t-[15%]"
+          id="fleet-wrapper"
+          className="bg-[var(--bgWhitw)] overflow-hidden rounded-t-[12%] xl:rounded-t-[15%]"
         >
-          <div className="h-[50vh] bg-fuchsia-200"></div>
-          <div className="h-[70vh] bg-green-200"></div>
-          <p>a7aaaaa</p>
+          <div
+            id="fleet-content"
+            className="min-h-screen pt-30 mx-[var(--mxMob)] md:mx-[var(--mxTap)] lg:mx-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl "
+          >
+            <div className="flex flex-col items-end gap-4">
+              <h1 className="flex gap-1.5 font-[family-name:var(--font-local)] text-1xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994]">
+                سياراتنا
+                <span className="text-[#090909]">أسطول</span>
+              </h1>
+              <p className="xl:max-w-lg text-right">
+                تصفح تشكيلتنا المتنوعة واعرف أسعار إيجار السيارات واختار العربية
+                اللي تليق بيك وتريحك في السواقة. بنوفرلك فئات تناسب كل
+                الميزانيات.
+              </p>
+            </div>
+            <FleetCarousel />
+          </div>
         </div>
       </div>
     </section>
