@@ -85,10 +85,10 @@ const Hero = () => {
             className="min-h-screen pt-30 mx-[var(--mxMob)] md:mx-[var(--mxTap)] lg:mx-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl "
           >
             <div className="flex flex-col items-end gap-4">
-              <h1 className="flex gap-1.5 font-[family-name:var(--font-local)] text-1xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994]">
+              <h2 className="flex gap-1.5 font-[family-name:var(--font-local)] text-1xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994]">
                 سياراتنا
                 <span className="text-[#090909]">أسطول</span>
-              </h1>
+              </h2>
               <p className="xl:max-w-lg text-right">
                 تصفح تشكيلتنا المتنوعة واعرف أسعار إيجار السيارات واختار العربية
                 اللي تليق بيك وتريحك في السواقة. بنوفرلك فئات تناسب كل

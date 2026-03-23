@@ -96,7 +96,7 @@ export const fleetCars = [
     cta: "اعرف السعر",
   },
   {
-    image: "/pics/cars/kiaCerato2018.svg",
+    image: "/pics/cars/kiaCerato2026.svg",
     category: "سيدان",
     title: "كيا سيراتو 2026",
     description:
