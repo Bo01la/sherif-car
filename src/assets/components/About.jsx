@@ -184,9 +184,15 @@ const About = () => {
                 على طول الطريق. ثقتك هي أهم مكسب لينا
               </p>
 
-              <button className="about-btn mt-6 px-4 py-1.5 rounded-lg text-white bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] [background-size:200%_auto] bg-[position:0%_center] hover:bg-[position:100%_center] transition-all duration-1000 ease-in-out">
+              <a
+                href="https://wa.me/201000668064"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="واتساب"
+                className="about-btn inline-block mt-6 px-4 py-1.5 rounded-lg text-white bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] [background-size:200%_auto] bg-[position:0%_center] hover:bg-[position:100%_center] transition-all duration-1000 ease-in-out"
+              >
                 اتصل بنا
-              </button>
+              </a>
             </div>
           </div>
         </div>

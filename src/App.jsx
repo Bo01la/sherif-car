@@ -10,6 +10,7 @@ import Hero from "./assets/components/Hero.jsx";
 import Rent from "./assets/components/Rent.jsx";
 import About from "./assets/components/About.jsx";
 import Testimonials from "./assets/components/Testimonials.jsx";
+import Footer from "./assets/components/Footer.jsx";
 
 function App() {
   useGSAP(() => {
@@ -31,6 +32,7 @@ function App() {
           <Rent />
           <About />
           <Testimonials />
+          <Footer />
         </div>
       </div>
 
