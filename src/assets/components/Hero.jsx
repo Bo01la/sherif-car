@@ -5,11 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Hero = () => {
   useGSAP(() => {
     const tl = gsap.timeline({ delay: 3 });
-    tl.to("h1", { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" })
-      .to("p", { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" })
+    tl.to("h1", { opacity: 1, y: 0, duration: 0.7, ease: "power1.out" })
+      .to("p", { opacity: 1, y: 0, duration: 0.7, ease: "power1.out" })
       .to(
         "button",
-        { opacity: 1, y: 0, duration: 0.5, ease: "power1.out" },
+        { opacity: 1, y: 0, duration: 0.6, ease: "power1.out" },
         "-=0.5",
       );
 
@@ -66,18 +66,22 @@ const Hero = () => {
                   الأسعار. طريقك دايماً أسهل معانا
                 </p>
               </div>
-              <button className="opacity-0 translate-y-10 px-3 py-1 rounded-md text-white bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] [background-size:200%_auto] bg-[position:0%_center] hover:bg-[position:100%_center] transition-all duration-1000 ease-in-out">
+              <button className="opacity-0 translate-y-10 px-4 py-1.5 rounded-lg text-white bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] [background-size:200%_auto] bg-[position:0%_center] hover:bg-[position:100%_center] transition-all duration-1000 ease-in-out">
                 اتصل بنا
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div id="fleet" className="relative z-10 h-screen ">
+      <div id="fleet" className="relative z-10">
         <div
           id="fleet-content"
-          className="bg-[var(--bgWhitw)] h-screen rounded-t-[12%] xl:rounded-t-[15%]"
-        ></div>
+          className="bg-[var(--bgWhitw)] min-h-screen overflow-hidden rounded-t-[12%] xl:rounded-t-[15%]"
+        >
+          <div className="h-[50vh] bg-fuchsia-200"></div>
+          <div className="h-[70vh] bg-green-200"></div>
+          <p>a7aaaaa</p>
+        </div>
       </div>
     </section>
   );
