@@ -129,7 +129,7 @@ const FleetCarousel = ({ slides = fleetCars }) => {
   const activeSlide = slides[activeIndex];
 
   return (
-    <section ref={rootRef} className="mt-10 md:mt-14 lg:mt-16 w-full pb-3.5">
+    <section ref={rootRef} id="fleet" className="mt-10 md:mt-14 lg:mt-16 w-full pb-3.5">
       <div className="w-full">
         <div className="relative overflow-hidden rounded-[24px] md:rounded-[32px]">
           <button

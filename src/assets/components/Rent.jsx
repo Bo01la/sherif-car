@@ -55,7 +55,7 @@ const Rent = () => {
             autoAlpha: 1,
             y: 0,
             duration: 0.6,
-            ease: "power2.out",
+            ease: "power2.out", 
             scrollTrigger: {
               trigger: step,
               start: "top 85%",

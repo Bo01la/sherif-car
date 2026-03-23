@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { scrollToSection } from "./utils/scrollToSection";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,11 +7,22 @@ const Nav = () => {
   const openHelper = () => setIsOpen(true);
   const closeHelper = () => setIsOpen(false);
 
+  const handleNavClick = (target) => {
+    scrollToSection(target);
+    closeHelper();
+  };
+
   return (
     <>
       <div className="fixed top-0 left-0 z-[80] w-full bg-transparent mt-3">
         <nav className="flex justify-between px-[var(--mxMob)] md:px-[var(--mxTap)] lg:px-[var(--mxDesk)] xl:mx-auto xl:max-w-6xl xl:px-0">
-          <img src="/pics/logo.png" alt="logo" width={72} />
+          <img
+            src="/pics/logo.png"
+            alt="logo"
+            width={72}
+            className="cursor-pointer"
+            onClick={() => handleNavClick("#hero")}
+          />
 
           <div className="flex flex-col justify-center">
             <button
@@ -46,22 +58,47 @@ const Nav = () => {
             <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></span>
             <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-linear-to-r from-[#fb720994] via-[#ffe600d2] to-[#fb720994] rounded-sm"></span>
           </button>
+
           <div className="flex flex-col gap-4">
-            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+            <button
+              type="button"
+              onClick={() => handleNavClick("#hero")}
+              className="text-right text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]"
+            >
               الرئيسية
-            </a>
-            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+            </button>
+
+            <button
+              type="button"
+              onClick={() => handleNavClick("#fleet")}
+              className="text-right text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]"
+            >
               اسطول السيارات
-            </a>
-            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+            </button>
+
+            <button
+              type="button"
+              onClick={() => handleNavClick("#rent")}
+              className="text-right text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]"
+            >
               خطوات الاستأجار
-            </a>
-            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+            </button>
+
+            <button
+              type="button"
+              onClick={() => handleNavClick("#about")}
+              className="text-right text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]"
+            >
               من نحن
-            </a>
-            <a className="text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]">
+            </button>
+
+            <button
+              type="button"
+              onClick={() => handleNavClick("#testimonials")}
+              className="text-right text-2xl bg-gradient-to-r from-white to-white bg-clip-text text-transparent cursor-pointer hover:bg-linear-to-r hover:from-[#fb720994] hover:via-[#ffe600d2] hover:to-[#fb720994]"
+            >
               اراء العملاء
-            </a>
+            </button>
           </div>
         </div>
       </div>
