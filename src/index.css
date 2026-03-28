@@ -9,6 +9,7 @@
 }
 
 :root {
+    color-scheme: only light;
   --bgBlack: #090909;
   --bgWhitw: #f1f1f1;
   --mxDesk: 62px;
