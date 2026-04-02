@@ -163,7 +163,7 @@ const About = () => {
         <div className="about-image-panel absolute inset-y-0 left-1/2 w-full min-[820px]:w-1/2 -translate-x-1/2 overflow-hidden">
           <img
             src="/pics/about.jpg"
-            alt="عن شرف لتأجير السيارات"
+            alt="عن شريف لتأجير السيارات"
             className="h-full w-full object-cover"
           />
           <div className="about-overlay absolute inset-0 bg-black/35" />

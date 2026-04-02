@@ -61,7 +61,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-center lg:items-end gap-5">
             <a
-              href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing.com%2Fmaps%2Fdefault.aspx%3Fv%3D2%26pc%3DFACEBK%26mid%3D8100%26where1%3D18%2520%252C%25D8%25B7%2520%25D8%25B4%25D8%25A7%25D8%25B1%25D8%25B9%2520%25D9%2586%25D8%25A7%25D8%25AF%25D9%258A%2520%25D8%25AD%25D8%25AF%25D8%25A7%25D8%25A6%25D9%2582%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A7%25D9%2585%2520kmw%2520auto%252C%25206%2520October%2520City%252C%2520Egypt%26FORM%3DFBKPL1%26mkt%3Den-US%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwczVTVVA1cG9JQTlrTW5zdHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7MzVpfMti0DuE5QA0JXzOCGi1hmMHShHQKClIqrgyAALJggVSAf7HBxTkpHQ_aem_2Y1lXEb9DqedVIYbZZ8Gng&h=AT61njnb3i8_m_TUk4oAy-f0wlMTw_Ky48kbYwH6CaRQ-KQmKcXgN5f_E-uyYAszVOGnnBQzur_x1VdV225E45q664B5Gza5lZEdlTTKNm_SN75PY3nQPgtoXKYkVY0mhDor"
+              href="https://maps.app.goo.gl/PzoaWR1ktAwZYEMUA"
               target="_blank"
               rel="noreferrer"
               className="block overflow-hidden rounded-2xl"
@@ -75,7 +75,7 @@ const Footer = () => {
 
             <div className="flex flex-col items-center lg:items-end gap-3 text-white">
               <a
-                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing.com%2Fmaps%2Fdefault.aspx%3Fv%3D2%26pc%3DFACEBK%26mid%3D8100%26where1%3D18%2520%252C%25D8%25B7%2520%25D8%25B4%25D8%25A7%25D8%25B1%25D8%25B9%2520%25D9%2586%25D8%25A7%25D8%25AF%25D9%258A%2520%25D8%25AD%25D8%25AF%25D8%25A7%25D8%25A6%25D9%2582%2520%25D8%25A7%25D9%2584%25D8%25A7%25D9%2587%25D8%25B1%25D8%25A7%25D9%2585%2520kmw%2520auto%252C%25206%2520October%2520City%252C%2520Egypt%26FORM%3DFBKPL1%26mkt%3Den-US%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBEwczVTVVA1cG9JQTlrTW5zdHNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7MzVpfMti0DuE5QA0JXzOCGi1hmMHShHQKClIqrgyAALJggVSAf7HBxTkpHQ_aem_2Y1lXEb9DqedVIYbZZ8Gng&h=AT61njnb3i8_m_TUk4oAy-f0wlMTw_Ky48kbYwH6CaRQ-KQmKcXgN5f_E-uyYAszVOGnnBQzur_x1VdV225E45q664B5Gza5lZEdlTTKNm_SN75PY3nQPgtoXKYkVY0mhDor"
+                href="https://maps.app.goo.gl/PzoaWR1ktAwZYEMUA"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 text-sm md:text-base text-white/85 transition hover:text-white"
